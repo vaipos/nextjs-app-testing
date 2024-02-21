@@ -3,7 +3,6 @@ import styles from "./Home.module.css"
 import Comp1 from "./comp1";
 
 
-
 // all components inside the app folder are server componenets by default
 // a client component is a component that can be built with a:
 // 'use client';
@@ -18,7 +17,6 @@ import Comp1 from "./comp1";
 export default function Home() {
   return (
     <>
-
     </>
   )
 }
