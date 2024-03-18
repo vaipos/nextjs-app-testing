@@ -1,11 +1,19 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 interface Props {
-  params: { slug: string[]}
+  searchParams: { sortOrder: string}
+  params: {slug : string[]}
 }
-const NewUserPage = ({params: {slug}}: Props) => {
+const NewUserPage = ({searchParams: {sortOrder}, params: {slug}}: Props) => {
+  const route = useRouter();
   return (
-    <div>{slug}</div>
+    <>
+      <button className='btn btn-success text-white' onClick={() => route.push('/users')}>Go back</button>
+
+    </>
+   
   )
 }
 

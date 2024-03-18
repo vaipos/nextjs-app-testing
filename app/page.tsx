@@ -1,7 +1,7 @@
 import Link from "@/node_modules/next/link";
 import styles from "./Home.module.css"
 import Comp1 from "./comp1";
-import MyComponent from "./compML";
+
 
 
 // all components inside the app folder are server componenets by default
@@ -18,7 +18,7 @@ import MyComponent from "./compML";
 export default function Home() {
   return (
     <>
-  <MyComponent/>
+
     </>
   )
 }
